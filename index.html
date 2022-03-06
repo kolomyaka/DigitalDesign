@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>JavaScript</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <img src="img/headerLogo.svg" alt="JavaScript-Logo" class="header__logo-img">
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+        <div class="main__wrapper wrapper">
+            <section class="main__content">
+                <h3 class="main__content-title">
+                    Язык программирования JavaScript. Его возможности и особенности.
+                </h3>
+                <article class="main__content-description">
+                    <p class="main__content-text">
+                        Javascript существует уже четверть века. Срок внушительный для подобных технологий. За это
+                        время
+                        он прошёл большой путь, стал мощным инструментом IT-индустрии. По уровню популярности язык в
+                        группе лидеров. При этом он считается доступным для освоения, дружественным по отношению к
+                        новичкам.
+                    </p>
+                    <img class="main__content-img" src="img/mainIMG.jpg" alt="">
+                </article>
+            </section>
+            <section class="main__content">
+                <h3 class="main__content-title">Особенности JavaScript</h3>
+                <article class="main__content-description column">
+                    <img class="main__content-img" style="max-width: 990px;" src="img/01.png" alt="">
+                    <p class="main__content-text column-text">
+                        JavaScript называют языком скриптов или сценариев. Скрипты — это набор инструкций, которые
+                        выполняются при загрузке страницы. Браузер самостоятельно интерпретирует код на JavaScript, для
+                        этого даже не требуется компиляция (перевод языка программирования в машинный код).
+                        Скрипты можно прописать внутри кода страницы или подключить к HTML отдельным файлом. Например в
+                        стандартной разметке index.html JS-код прописывают внутри тега script, помещенного в тег body:
+                    </p>
+                </article>
+            </section>
+            <section class="main__content">
+                <h3 class="main__content-title">Где применяется JavaScript</h3>
+                <article class="main__content-description">
+                    <ul class="main__content-list">
+                        <li class="main__content-item">
+                            <p class="main__content-item-title">Клиентская часть веб—приложений (frontend).</p>
+                            <p>Это интерфейс страницы, то есть всё, что видит пользователь: контент, кнопки, формы
+                                обратной связи, меню. С помощью JS интерфейс реагирует на действия пользователя (клики
+                                мыши, нажатия клавиш), также язык отвечает за запоминание данных и автозаполнение форм.
+                            </p>
+                        </li>
+                        <li class="main__content-item">
+                            <p class="main__content-item-title">Серверная часть веб—приложений (backend). </p>
+                            <p>Серверный код пишут на платформе Node.js. На JS работают, например, запросы AJAX
+                                (asynchronous javascript and XML), которые отправляются на сервер в фоновом режиме, без
+                                перезагрузки веб-страницы, и push-уведомления — всплывающие сообщения в браузере,
+                                которые реализуются с помощью технологии Comet. </p>
+                        </li>
+                        <li class="main__content-item">
+                            <p class="main__content-item-title">Мобильные приложения на Android, iOS, Windows Mobile
+                            </p>
+                            <p>когда нужно кросс-платформенное приложение или адаптация веб-приложения, а языков Kotlin
+                                (для Android) и Swift (для iOS) недостаточно, то используется JavaScript.
+                            </p>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main__content">
+                <h3 class="main__content-title">Возможности</h3>
+                <article class="main__content-description">
+                    <ul class="main__content-list">
+                        <li class="main__content-item">
+                            <p class="main__content-item-title">Взаимодействие с пользователем</p>
+                            <p>Всплывающие окна с полем для ввода почты или других данных, уведомления об использовании
+                                cookie.
+                            </p>
+                        </li>
+                        <li class="main__content-item">
+                            <p class="main__content-item-title">Анимация</p>
+                            Это не только движущиеся объекты на странице и кнопки, но и карусель в галерее или плавная
+                            прокрутка страницы.
+                        </li>
+                        <li class="main__content-item">
+                            <p class="main__content-item-title">Обработка данных HTML</p>
+                            JS помогает заполнить необходимые поля в формах, проверять буквенные и числовые значения, а
+                            также управлять HTML-элементами на странице.
+                        </li>
+                        <li class="main__content-item">
+                            <p class="main__content-item-title">Математические вычисления</p>
+                            С помощью JS-скриптов на сайтах реализованы калькуляторы, например подсчет суммы заказа в
+                            корзине интернет-магазина.
+
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main__content">
+                <h3 class="main__content-title">Вывод информации о введеной дате</h3>
+                <article class="main__content-description">
+                    <input type="date" id="date">
+                </article>
+            </section>
+            <section class="main__content">
+                <h3 class="main__content-title">Реализация игры морской бой на JavaScript</h3>
+                <p class="codepen" data-height="372" data-theme-id="dark" data-default-tab="js,result"
+                    data-slug-hash="eYeXrYP" data-user="Kolomyaka"
+                    style="height: 372px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/Kolomyaka/pen/eYeXrYP">
+                            Untitled</a> by Nikita (<a href="https://codepen.io/Kolomyaka">@Kolomyaka</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <a href="https://github.com/kolomyaka1/BattleShip">
+                    <p class="main__content-link">Ссылка на репозиторий</p>
+                </a>
+            </section>
+        </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+    </footer>
+    <a href="#" class="scrollup" id="scroll-up">
+        <img class="scrollup__icon" src="img/arrow.png"></img>
+    </a>
+    <script src="script/main.js"></script>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+<!--        NAV
+     <nav class="main__navigation">
+            <ul class="main__navigation-list">
+                <li class="main__navigation-item"><a href="#" class="main__navigation-link">Введение</a></li>
+                <li class="main__navigation-item"><a href="#" class="main__navigation-link">Области применения</a></li>
+                <li class="main__navigation-item"><a href="#" class="main__navigation-link">Возможости</a></li>
+                <li class="main__navigation-item"><a href="#" class="main__navigation-link">Особенности</a></li>
+
+            </ul>
+    </nav>
+ -->
