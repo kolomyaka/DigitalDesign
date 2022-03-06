@@ -60,6 +60,10 @@ li {
 .main__content-text.column-text {
   max-width: 990px;
 }
+.main__content-input {
+  width: 250px;
+  height: 30px;
+}
 .main__content-description {
   display: -webkit-box;
   display: -ms-flexbox;
