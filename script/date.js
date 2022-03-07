@@ -7,21 +7,14 @@ dateButton.addEventListener('click', () => {
 })
 
 window.onload = function () {
-    let date = new Date().toLocaleString({ month: 'numeric' });
-    console.log(date);
-    let dateForInput = date.toJSON();
-    console.log(dateForInput);
-    // Date.prototype.toDateInputValue = (function () {
-    //     var local = new Date(this);
-    //     console.log(local);
-    //     local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
-    //     console.log(local.toJSON());
-    //     return local.toJSON().slice(0, 10);
-    // });
-    new Date().toDateInputValue()
+    let date = new Date().toLocaleString({ month: 'numeric' });  // Получаем сегодняшнюю дату
 
+    let newDate = date.slice(0,10);  
+    newDate = newDate.split('.');  
+    [newDate[0],newDate[1],newDate[2]] = [newDate[2], newDate[1], newDate[0]]; // Для корректной работы делаем массив дат в формате <Year><Month><Day></Day>
+    dateForInput = `${newDate[0]}-${newDate[1]}-${newDate[2]}`;  
 
-    document.getElementById('date').value = new Date().toDateInputValue();
+    document.getElementById('date').value = dateForInput;
 
 }
 

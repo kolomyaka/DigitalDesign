@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="img/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <title>JavaScript</title>
 </head>
@@ -15,19 +16,28 @@
 <body>
 
     <!-- HEADER -->
-    <header class="header">
+    <header class="header" ">
         <div class="header__wrapper">
             <div class="header__logo">
                 <img src="img/headerLogo.svg" alt="JavaScript-Logo" class="header__logo-img">
             </div>
+        
+            <nav class="header__navigation">
+                <ul class="header__navigation-list">
+                    <li class="header__navigation-item"><a href="#head1" class="header__navigation-link">Введение</a></li>
+                    <li class="header__navigation-item"><a href="#head3" class="header__navigation-link">Особенности</a></li>
+                    <li class="header__navigation-item"><a href="#head2" class="header__navigation-link">Области применения</a></li>
+                    <li class="header__navigation-item"><a href="#head4" class="header__navigation-link">Возможности</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <!-- MAIN -->
-    <main class="main">
+    <main class="main" >
         <div class="main__wrapper wrapper">
-            <section class="main__content">
-                <h3 class="main__content-title">
+            <section class="main__content" id="head1" >
+                <h3 class="main__content-title main-title" >
                     Язык программирования JavaScript. Его возможности и особенности.
                 </h3>
                 <article class="main__content-description">
@@ -41,7 +51,7 @@
                     <img class="main__content-img" src="img/mainIMG.jpg" alt="">
                 </article>
             </section>
-            <section class="main__content">
+            <section class="main__content" id="head3">
                 <h3 class="main__content-title">Особенности JavaScript</h3>
                 <article class="main__content-description column">
                     <img class="main__content-img" style="max-width: 990px;" src="img/01.png" alt="">
@@ -54,7 +64,7 @@
                     </p>
                 </article>
             </section>
-            <section class="main__content">
+            <section class="main__content" id="head2">
                 <h3 class="main__content-title">Где применяется JavaScript</h3>
                 <article class="main__content-description">
                     <ul class="main__content-list">
@@ -82,7 +92,7 @@
                     </ul>
                 </article>
             </section>
-            <section class="main__content">
+            <section class="main__content" id="head4">
                 <h3 class="main__content-title">Возможности</h3>
                 <article class="main__content-description">
                     <ul class="main__content-list">
@@ -113,12 +123,10 @@
             </section>
             <section class="main__content">
                 <h3 class="main__content-title">Вывод информации о введеной дате</h3>
-                <article class="main__content-description ">
-                    <div class="date-input">
+                <article class="main__content-description input-block">
                         <input type="date" id="date">
-                        <button id="getDate">--></button>
+                        <button id="getDate" class="main__content-button"><img src="img/02.png" alt=""></button>
                         <input id="dateInputInfo" type="text" class="main__content-input">
-                    </div>
                 </article>
             </section>
             <section class="main__content">
@@ -140,9 +148,11 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-
+        <div class="footer__wrapper">
+            <a href="https://github.com/kolomyaka1" class="footer-link"><img src="img/03.png" alt=""></a>
+        </div>
     </footer>
-    <a href="#" class="scrollup" id="scroll-up">
+    <a href="" class="scrollup" id="scroll-up">
         <img class="scrollup__icon" src="img/arrow.png"></img>
     </a>
     <script src="script/main.js"></script>
@@ -157,14 +167,4 @@
 
 
 
-<!--        NAV
-     <nav class="main__navigation">
-            <ul class="main__navigation-list">
-                <li class="main__navigation-item"><a href="#" class="main__navigation-link">Введение</a></li>
-                <li class="main__navigation-item"><a href="#" class="main__navigation-link">Области применения</a></li>
-                <li class="main__navigation-item"><a href="#" class="main__navigation-link">Возможости</a></li>
-                <li class="main__navigation-item"><a href="#" class="main__navigation-link">Особенности</a></li>
 
-            </ul>
-    </nav>
- -->

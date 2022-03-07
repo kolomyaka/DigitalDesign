@@ -13,7 +13,7 @@
   li {
     list-style: none
   }
-  
+
   // Header
   
   .header {
@@ -28,17 +28,37 @@
       max-width: 1200px;
       margin: 0 auto;
       max-height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 15px;
+
     }
-    &__logo {
-      width: 170px;
-      margin: 0 auto;
+    &__navigation {
+      &-list {
+        display: flex;
+      }
+      &-item {
+        margin: 10px;
+      }
+      &-link {
+        transition: color 300ms ease-in-out;
+        &:hover {
+          color: red;
+          text-decoration: underline;
+          transition: color 300ms ease-in-out;
+        }
+      }
     }
     &__logo-img {
-  
       padding-top: 5px;
     }
   }
   
+  .active-link {
+    color: red;
+  }
+
   
   // Main
   .wrapper {
@@ -50,21 +70,30 @@
   .main {
     
     &__wrapper {
-      margin-top: 65px;
-  
+      padding-top: 45px;
     }
     &__content {
-      margin-bottom: 40px;
       &-title {
         font-weight: bold;
         font-size: 20px;
         margin-bottom: 10px;
+        padding-top: 70px;
+        color : #2c3142;
       }
       &-text {
         font-size: 18px;
         max-width: 370px;
         &.column-text {
           max-width: 990px;
+        }
+      }
+      &-button {
+        border: none;
+        background-color: #fff;
+        cursor: pointer;
+        & img {
+          width: 20px;
+          height: 20px;
         }
       }
       &-input {
@@ -77,6 +106,19 @@
         justify-content: space-between;
         margin-top: 20px;
         align-items: center;
+        &.input-block {
+          align-items: center;
+          justify-content: flex-start;
+          & img {
+            margin: 10px;
+            width: 20px;
+            height: 20px;
+            transition: .3s ease-in-out;
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
         &.column {
           flex-direction: column;
         }
@@ -103,27 +145,36 @@
   
         }
       }
+
       &-link {
         text-decoration: underline;
       }
       &-img {
-        width: 500px;
+        max-width: 450px;
+        height: 250px;
+        object-fit:contain;
         padding: 15px;
-      }
-    }
-    &__navigation {
-      &-list {
-  
-      }
-      &-item {
-  
-      }
-      &-link {
-  
       }
     }
   }
   
+  // Footer
+
+  .footer {
+    background-color: #353535;
+    height: 70px;
+    &-link {
+      color: white;
+      & img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+    &__wrapper {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+  }
   
   
   // Scroll
