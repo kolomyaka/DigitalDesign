@@ -3,7 +3,7 @@ const dateButton = document.getElementById('getDate');
 const dateInputInfo = document.getElementById('dateInputInfo');
 
 dateButton.addEventListener('click', () => {
-    getDate()
+    getDate(); 
 })
 
 window.onload = function () {
@@ -11,8 +11,8 @@ window.onload = function () {
 
     let newDate = date.slice(0,10);  
     newDate = newDate.split('.');  
-    [newDate[0],newDate[1],newDate[2]] = [newDate[2], newDate[1], newDate[0]]; // Для корректной работы делаем массив дат в формате <Year><Month><Day></Day>
-    dateForInput = `${newDate[0]}-${newDate[1]}-${newDate[2]}`;  
+    [newDate[0],newDate[1],newDate[2]] = [newDate[2], newDate[1], newDate[0]]; // Для корректной работы делаем массив дат в формате <Year><Month><Day>
+    dateForInput = `${newDate[0]}-${newDate[1]}-${newDate[2]}`;  // Создаем строку, которую передаем инпуту
 
     document.getElementById('date').value = dateForInput;
 

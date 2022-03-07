@@ -1,4 +1,10 @@
 const sections = document.querySelectorAll('section[id]');
+const menu = document.getElementById('menu');
+const headerNavigation = document.querySelector('.header__navigation');
+const close = document.getElementById('close');
+const navLink = document.querySelectorAll('.header__navigation-item');
+
+// Функция для скролла к якорным ссылкам
 
 document.addEventListener('DOMContentLoaded', function(){
     const anchors = document.querySelectorAll('a[href*="#"]');
@@ -13,6 +19,35 @@ document.addEventListener('DOMContentLoaded', function(){
         })
     }
 })
+
+// Слушатели событий на кнопку меню и закрытия меню 
+
+menu.addEventListener('click', () => {
+    headerNavigation.classList.add('show-menu');
+    menu.style.display = 'none';
+    close.style.display = 'block';
+});
+
+close.addEventListener('click', () => {
+    headerNavigation.classList.remove('show-menu');
+    menu.style.display = 'block';
+    close.style.display = 'none';
+})
+
+
+// Функция при клике на ссылки в меню
+
+function closeMenu() {
+    headerNavigation.classList.remove('show-menu');  
+    if (menu.style.display == 'none') {  // Проверяем активно ли меню
+        menu.style.display = 'block';
+        close.style.display = 'none';
+    }
+
+}
+
+navLink.forEach(item => item.addEventListener('click', closeMenu))
+
 
 function scrollActive() {
     const scrollY = window.pageYOffset;
@@ -41,6 +76,7 @@ function scrollUp() {
     // Когда скролим больше 200, добавляем класс show-scroll.
     if (this.scrollY >= 200) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll');
 }
+
 
 window.addEventListener('scroll', () => {
     scrollUp();
