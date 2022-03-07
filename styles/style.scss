@@ -83,6 +83,7 @@
       &-text {
         font-size: 18px;
         max-width: 370px;
+        margin-top: 20px;
         &.column-text {
           max-width: 990px;
         }
@@ -153,7 +154,11 @@
         max-width: 450px;
         height: 250px;
         object-fit:contain;
-        padding: 15px;
+        &.main-img {
+          object-fit: cover;
+          width: 100%;
+          max-width: 100%;
+        }
       }
     }
   }

@@ -83,6 +83,7 @@ li {
 .main__content-text {
   font-size: 18px;
   max-width: 370px;
+  margin-top: 20px;
 }
 .main__content-text.column-text {
   max-width: 990px;
@@ -170,7 +171,12 @@ li {
   height: 250px;
   -o-object-fit: contain;
      object-fit: contain;
-  padding: 15px;
+}
+.main__content-img.main-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  max-width: 100%;
 }
 
 .footer {
